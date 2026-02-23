@@ -70,7 +70,7 @@ Outside tech: exploring **UI/UX trends** and creative problem solving.
 ## 📫 Connect with Me
 - 🌍 Location: Johannesburg, South Africa  
 - 🎓 Learning at: ALX Africa – Frontend ProDev  
-- 🔗 Portfolio: [reseanne.dev](https://reseanne.dev)  
+- 🔗 Portfolio https://github.com/sean-techie/reseannerampou.dev 
 - 🐦 Twitter: [@ReseanneR](https://twitter.com/ReseanneR)  
 - 💼 LinkedIn: [Reseanne Rampou](https://www.linkedin.com/in/reseanne-rampou)  
 - 💻 GitHub: [@sean-techie](https://github.com/sean-techie)  
