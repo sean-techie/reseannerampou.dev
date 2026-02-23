@@ -34,6 +34,11 @@ I love tackling challenging problems and creating projects that make an impact.
 ## 🚀 Projects
 
 ##Lite-Link URL Shortener
+
+The app allows users to convert long URLs into short, shareable links through a simple and responsive interface.
+
+This project demonstrates real-world frontend engineering practices including modern project structure, reusable components, and production-ready tooling.
+
 https://alx-project-nexus-sigma-nine.vercel.app/
 
 
