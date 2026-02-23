@@ -51,7 +51,7 @@ https://alx-project-nexus-sigma-nine.vercel.app/
 
 ### 🏠 Airbnb Clone – Full-Stack Web App
 - Full-stack property listings with search & responsive UI  
-- [https://github.com/sean-techie/airbnb-clone-project.git)
+https://alx-listing-app-deployed-umber-eight.vercel.app/
 
 ---
 
