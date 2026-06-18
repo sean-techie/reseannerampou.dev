@@ -8,57 +8,64 @@ export default function Home() {
 
       <main
         id="home"
-        className="min-h-screen bg-[#F8F5F2] flex items-center px-6 md:px-20 pt-28"
+        className="min-h-screen bg-[#F8F5F2] flex items-center px-6 md:px-20 pt-20 md:pt-28"
       >
-        <div className="grid md:grid-cols-2 w-full items-center gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full items-center gap-10 md:gap-16">
           <div className="text-center md:text-left">
             <p className="text-[#C08A5D] text-sm tracking-[0.25em] uppercase">
-              Frontend Developer · Data Science
+            
             </p>
 
-            <h1 className="text-5xl md:text-6xl font-semibold text-[#2C3E50] leading-tight mt-4">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold text-[#2C3E50] leading-tight mt-4">
               Reseanne Rampou
             </h1>
 
-            <div className="mt-3 flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3 justify-center md:justify-start text-center md:text-left">
-              <span className="w-12 h-[1px] bg-[#C08A5D]" />
-              <p className="text-xs text-[#6B7280] tracking-[0.3em]">
-                フロントエンド ・ データサイエンス
-              </p>
+            <div className="mt-3 h-6 overflow-hidden relative">
+              <div className="animate-slide text-[#6B7280] text-sm sm:text-base">
+                Frontend Developer . Data Science
+              </div>
+              <div className="animate-slide text-[#6B7280] text-sm sm:text-base">
+                Data Science Enthusiast
+              </div>
+              <div className="animate-slide text-[#6B7280] text-sm sm:text-base">
+                UI Engineer
+              </div>
             </div>
 
-            <p className="mt-6 text-[#6B7280] text-lg leading-relaxed max-w-lg mx-auto md:mx-0">
+            <p className="mt-5 text-[#6B7280] text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0">
               Building thoughtful digital experiences through frontend engineering and data-driven problem solving.
             </p>
 
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a
                 href="#projects"
-                className="px-7 py-3 bg-[#2C3E50] text-white rounded-full hover:opacity-90 transition"
+                className="px-6 py-3 bg-[#2C3E50] text-white rounded-full hover:opacity-90 transition"
               >
                 View Work
               </a>
 
               <a
                 href="#contact"
-                className="px-7 py-3 border border-[#C08A5D] text-[#C08A5D] rounded-full hover:bg-[#C08A5D] hover:text-white transition"
+                className="px-6 py-3 border border-[#C08A5D] text-[#C08A5D] rounded-full hover:bg-[#C08A5D] hover:text-white transition"
               >
                 Let's Connect
               </a>
             </div>
           </div>
 
-          <div className="flex justify-center relative">
-            <div className="absolute w-96 h-96 bg-[#C08A5D]/10 rounded-full blur-3xl" />
+          <div className="flex justify-center mt-6 md:mt-0">
+            <div className="relative w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px]">
+              <div className="absolute inset-0 bg-[#C08A5D]/10 rounded-full blur-3xl" />
 
-            <Image
-              src="/images/reseanne.png"
-              alt="Reseanne Rampou"
-              width={380}
-              height={380}
-              priority
-              className="relative z-10 rounded-[32px] object-cover shadow-2xl"
-            />
+              <Image
+                src="/images/reseanne.png"
+                alt="Reseanne Rampou"
+                width={380}
+                height={380}
+                priority
+                className="relative z-10 rounded-[28px] object-cover shadow-2xl w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </main>
@@ -79,7 +86,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="px-6 md:px-20 py-24 md:py-32 bg-[#F8F5F2]">
+      <section
+        id="projects"
+        className="px-6 md:px-20 py-24 md:py-32 bg-[#F8F5F2]"
+      >
         <div className="max-w-4xl">
           <p className="text-[#C08A5D] text-sm tracking-[0.25em] uppercase">
             Projects
@@ -108,12 +118,10 @@ export default function Home() {
               height={500}
               className="w-full h-56 object-cover"
             />
-
             <div className="p-6">
               <h3 className="text-xl font-semibold text-[#2C3E50]">
                 RoleRadar
               </h3>
-
               <p className="mt-2 text-sm text-[#6B7280] leading-relaxed">
                 AI-powered job market analytics platform using NLP to extract in-demand skills and visualize trends.
               </p>
@@ -133,12 +141,10 @@ export default function Home() {
               height={500}
               className="w-full h-56 object-cover"
             />
-
             <div className="p-6">
               <h3 className="text-xl font-semibold text-[#2C3E50]">
                 Lite-Link
               </h3>
-
               <p className="mt-2 text-sm text-[#6B7280] leading-relaxed">
                 Modern URL shortener built with Next.js and TypeScript featuring fast redirects and clean UI.
               </p>
@@ -158,12 +164,10 @@ export default function Home() {
               height={600}
               className="w-full h-72 object-cover"
             />
-
             <div className="p-6">
               <h3 className="text-xl font-semibold text-[#2C3E50]">
                 Cineseek Movie App
               </h3>
-
               <p className="mt-2 text-sm text-[#6B7280] leading-relaxed">
                 Movie discovery PWA with search, API integration, and responsive browsing experience.
               </p>
