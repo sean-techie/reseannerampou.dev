@@ -6,7 +6,6 @@ export default function Home() {
     <>
       <Navbar />
 
-      {/* HERO */}
       <main
         id="home"
         className="min-h-screen bg-[#F8F5F2] flex items-center px-6 md:px-20 pt-28"
@@ -21,7 +20,7 @@ export default function Home() {
               Reseanne Rampou
             </h1>
 
-            <div className="mt-3 flex items-center gap-3 justify-center md:justify-start">
+            <div className="mt-3 flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3 justify-center md:justify-start text-center md:text-left">
               <span className="w-12 h-[1px] bg-[#C08A5D]" />
               <p className="text-xs text-[#6B7280] tracking-[0.3em]">
                 フロントエンド ・ データサイエンス
@@ -64,7 +63,6 @@ export default function Home() {
         </div>
       </main>
 
-      {/* ABOUT */}
       <section id="about" className="px-6 md:px-20 py-24 md:py-32 bg-white">
         <div className="max-w-4xl">
           <p className="text-[#C08A5D] text-sm tracking-[0.25em] uppercase">
@@ -76,16 +74,12 @@ export default function Home() {
           </h2>
 
           <p className="mt-6 text-[#6B7280] text-lg leading-relaxed">
-            I am a Frontend Developer with growing expertise in Data Science, focused on building scalable systems and meaningful user experiences.
+            I am a Frontend Developer with growing expertise in Data Science, focused on building scalable systems and meaningful digital experiences.
           </p>
         </div>
       </section>
 
-      {/* PROJECTS */}
-      <section
-        id="projects"
-        className="px-6 md:px-20 py-24 md:py-32 bg-[#F8F5F2]"
-      >
+      <section id="projects" className="px-6 md:px-20 py-24 md:py-32 bg-[#F8F5F2]">
         <div className="max-w-4xl">
           <p className="text-[#C08A5D] text-sm tracking-[0.25em] uppercase">
             Projects
@@ -101,7 +95,6 @@ export default function Home() {
         </div>
 
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* RoleRadar */}
           <a
             href="https://role-radar-plum.vercel.app/"
             target="_blank"
@@ -115,14 +108,18 @@ export default function Home() {
               height={500}
               className="w-full h-56 object-cover"
             />
+
             <div className="p-6">
               <h3 className="text-xl font-semibold text-[#2C3E50]">
                 RoleRadar
               </h3>
+
+              <p className="mt-2 text-sm text-[#6B7280] leading-relaxed">
+                AI-powered job market analytics platform using NLP to extract in-demand skills and visualize trends.
+              </p>
             </div>
           </a>
 
-          {/* Lite-Link */}
           <a
             href="https://alx-project-nexus-sigma-nine.vercel.app/"
             target="_blank"
@@ -136,14 +133,18 @@ export default function Home() {
               height={500}
               className="w-full h-56 object-cover"
             />
+
             <div className="p-6">
               <h3 className="text-xl font-semibold text-[#2C3E50]">
                 Lite-Link
               </h3>
+
+              <p className="mt-2 text-sm text-[#6B7280] leading-relaxed">
+                Modern URL shortener built with Next.js and TypeScript featuring fast redirects and clean UI.
+              </p>
             </div>
           </a>
 
-          {/* Cineseek */}
           <a
             href="https://alx-pwa-0x01-4lmq.vercel.app/"
             target="_blank"
@@ -157,16 +158,20 @@ export default function Home() {
               height={600}
               className="w-full h-72 object-cover"
             />
+
             <div className="p-6">
               <h3 className="text-xl font-semibold text-[#2C3E50]">
                 Cineseek Movie App
               </h3>
+
+              <p className="mt-2 text-sm text-[#6B7280] leading-relaxed">
+                Movie discovery PWA with search, API integration, and responsive browsing experience.
+              </p>
             </div>
           </a>
         </div>
       </section>
 
-      {/* CONTACT */}
       <section id="contact" className="px-6 md:px-20 py-24 md:py-32 bg-white">
         <div className="max-w-3xl">
           <p className="text-[#C08A5D] text-sm tracking-[0.25em] uppercase">
@@ -178,15 +183,24 @@ export default function Home() {
           </h2>
 
           <p className="mt-6 text-[#6B7280] text-lg">
-            Open to collaboration and opportunities.
+            Interested in collaborating or opportunities.
           </p>
 
-          <div className="mt-8">
+          <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:reseanner@gmail.com"
               className="inline-flex px-7 py-3 bg-[#2C3E50] text-white rounded-full hover:opacity-90 transition"
             >
               Send Email
+            </a>
+
+            <a
+              href="https://github.com/sean-techie"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex px-7 py-3 border border-[#2C3E50] text-[#2C3E50] rounded-full hover:bg-[#2C3E50] hover:text-white transition"
+            >
+              GitHub Profile
             </a>
           </div>
         </div>
