@@ -12,9 +12,7 @@ export default function Home() {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 w-full items-center gap-10 md:gap-16">
           <div className="text-center md:text-left">
-            <p className="text-[#C08A5D] text-sm tracking-[0.25em] uppercase">
-            
-            </p>
+            <p className="text-[#C08A5D] text-sm tracking-[0.25em] uppercase"></p>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold text-[#2C3E50] leading-tight mt-4">
               Reseanne Rampou
@@ -22,7 +20,7 @@ export default function Home() {
 
             <div className="mt-3 h-6 overflow-hidden relative">
               <div className="animate-slide text-[#6B7280] text-sm sm:text-base">
-                Frontend Developer . Data Science
+                Frontend Developer · Data Science
               </div>
               <div className="animate-slide text-[#6B7280] text-sm sm:text-base">
                 Data Science Enthusiast
@@ -86,10 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="projects"
-        className="px-6 md:px-20 py-24 md:py-32 bg-[#F8F5F2]"
-      >
+      <section id="projects" className="px-6 md:px-20 py-24 md:py-32 bg-[#F8F5F2]">
         <div className="max-w-4xl">
           <p className="text-[#C08A5D] text-sm tracking-[0.25em] uppercase">
             Projects
@@ -105,6 +100,7 @@ export default function Home() {
         </div>
 
         <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-8">
+
           <a
             href="https://role-radar-plum.vercel.app/"
             target="_blank"
@@ -142,11 +138,11 @@ export default function Home() {
               className="w-full h-56 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-xl font-semibold text-[#2C3E50]">
+              <h3 className="text-xl font-semibold">
                 Lite-Link
               </h3>
               <p className="mt-2 text-sm text-[#6B7280] leading-relaxed">
-                Modern URL shortener built with Next.js and TypeScript featuring fast redirects and clean UI.
+                Modern URL shortener built with Next.js and TypeScript.
               </p>
             </div>
           </a>
@@ -165,14 +161,38 @@ export default function Home() {
               className="w-full h-72 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-xl font-semibold text-[#2C3E50]">
+              <h3 className="text-xl font-semibold">
                 Cineseek Movie App
               </h3>
               <p className="mt-2 text-sm text-[#6B7280] leading-relaxed">
-                Movie discovery PWA with search, API integration, and responsive browsing experience.
+                Movie discovery PWA with API integration, search, and responsive UI experience.
               </p>
             </div>
           </a>
+
+          <a
+            href="https://data-skill-tracker-wcbdlhb3wy9ac242fchvbi.streamlit.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="md:col-span-2 bg-white rounded-3xl overflow-hidden border border-[#E5E7EB] hover:-translate-y-2 hover:shadow-xl transition"
+          >
+            <Image
+              src="/projects/workforce-dashboard.png"
+              alt="Workforce Skills Analytics Dashboard"
+              width={800}
+              height={500}
+              className="w-full h-56 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold">
+                Workforce Skills Analytics Dashboard
+              </h3>
+              <p className="mt-2 text-sm text-[#6B7280] leading-relaxed">
+                Interactive workforce intelligence dashboard that analyzes skill demand across industries using Python, Pandas, Streamlit, and Plotly.
+              </p>
+            </div>
+          </a>
+
         </div>
       </section>
 
