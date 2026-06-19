@@ -20,7 +20,8 @@ export default function Home() {
 
             <div className="mt-3 h-6 overflow-hidden relative">
               <div className="animate-slide text-[#6B7280] text-sm sm:text-base">
-                Frontend Developer · Data Science
+                Frontend Developer building data-driven web apps
+                <div className="mt-2 text-[#9CA3AF] text-xs sm:text-sm tracking-wide"></div>
               </div>
               <div className="animate-slide text-[#6B7280] text-sm sm:text-base">
                 Data Science Enthusiast
@@ -29,6 +30,10 @@ export default function Home() {
                 UI Engineer
               </div>
             </div>
+
+            <div className="mt-2 text-[#9CA3AF] text-xs sm:text-sm tracking-wide">
+              Next.js . React . TypeScript . Tailwind CSS . Python . Streamlit . Pandas 
+              </div> 
 
             <p className="mt-5 text-[#6B7280] text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0">
               Building thoughtful digital experiences through frontend engineering and data-driven problem solving.
@@ -105,21 +110,26 @@ export default function Home() {
             href="https://role-radar-plum.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white rounded-3xl overflow-hidden border border-[#E5E7EB] hover:-translate-y-2 hover:shadow-xl transition"
+            className="bg-white rounded-3xl overflow-hidden border border-[#ESE7EB] transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:scale-[1.01]"
           >
+            <div className="absolute top-4 left-4 z10">
+              <span className="bg-[#C0845D] text-white-xs px-3 py-1 rounded-full">
+                Featured project
+                </span>
+                </div>
             <Image
               src="/projects/roleradar.png"
               alt="RoleRadar"
-              width={800}
-              height={500}
-              className="w-full h-56 object-cover"
+              width={1200}
+              height={600}
+              className="w-full h-76 object-cover"
             />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-[#2C3E50]">
                 RoleRadar
               </h3>
               <p className="mt-2 text-sm text-[#6B7280] leading-relaxed">
-                AI-powered job market analytics platform using NLP to extract in-demand skills and visualize trends.
+                AI-powered job market analytics platform that processes real-world job listings using NLP to extract in-demand skills, identify hiring trends, and help users understand what technologies are most sought after in the industry.
               </p>
             </div>
           </a>
@@ -128,7 +138,7 @@ export default function Home() {
             href="https://alx-project-nexus-sigma-nine.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white rounded-3xl overflow-hidden border border-[#E5E7EB] hover:-translate-y-2 hover:shadow-xl transition"
+            className="bg-white rounded-3xl overflow-hidden border border-[#E5E7EB] transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:scale-[1.01]"
           >
             <Image
               src="/projects/litelink.png"
@@ -142,7 +152,7 @@ export default function Home() {
                 Lite-Link
               </h3>
               <p className="mt-2 text-sm text-[#6B7280] leading-relaxed">
-                Modern URL shortener built with Next.js and TypeScript.
+                Modern URL shortener built with Next.js and TypeScript, designed to deliver fast redirects, clean UI, and scalable routing logic while demostrating full-stack fundamentals and performance-focused design.
               </p>
             </div>
           </a>
@@ -165,7 +175,7 @@ export default function Home() {
                 Cineseek Movie App
               </h3>
               <p className="mt-2 text-sm text-[#6B7280] leading-relaxed">
-                Movie discovery PWA with API integration, search, and responsive UI experience.
+                A progressive web app for discovering movies with real-time API intergration, dynamic search filtering, and responsive UI design, built to showcase API handling, state management, and mobile-first development.
               </p>
             </div>
           </a>
@@ -188,7 +198,7 @@ export default function Home() {
                 Workforce Skills Analytics Dashboard
               </h3>
               <p className="mt-2 text-sm text-[#6B7280] leading-relaxed">
-                Interactive workforce intelligence dashboard that analyzes skill demand across industries using Python, Pandas, Streamlit, and Plotly.
+                Interactive workforce intelligence dashboard built with Python, Pandas, Streamlit, and Plotly that analyzes skill demand across industries and visualizes emerging trends to support data-driven decision-making.
               </p>
             </div>
           </a>
@@ -206,8 +216,8 @@ export default function Home() {
             Let's Connect
           </h2>
 
-          <p className="mt-6 text-[#6B7280] text-lg">
-            Interested in collaborating or opportunities.
+          <p className="mt-6 text-[#6B7280] text-lg leading-relaxed">
+            I'm open to frontend developer roles, internsips, and collaborative projects in data-driven applications and modern web development.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
@@ -225,6 +235,15 @@ export default function Home() {
               className="inline-flex px-7 py-3 border border-[#2C3E50] text-[#2C3E50] rounded-full hover:bg-[#2C3E50] hover:text-white transition"
             >
               GitHub Profile
+            </a>
+
+            <a
+            href="https://www.linkedin.com/in/reseanne-rampou-96abba365"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex px-7 py-3 border border-[#C08A5D] rounded-full hover:bg [C08A5D] hover:text-white transition"
+            >
+            LinkedIn
             </a>
           </div>
         </div>
